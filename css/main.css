@@ -1,0 +1,42 @@
+/* FONTS */
+.my_font_Jomhuria {
+  font-family: "Jomhuria", cursive;
+  font-size: 25px;
+}
+
+.my_font_Scheherazade {
+  font-family: "Scheherazade", serif;
+  font-size: 21px;
+}
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  padding-top: 10vh;
+  /* padding-top: 150px; */
+  font-family: "Cairo", sans-serif;
+  /* background-color: snow; */
+}
+.background_img {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../img/bg_image5.jpg) center / cover no-repeat fixed;
+  min-height: 85vh;
+}
+
+#sidebar {
+  width: 4.9rem;
+  height: 73vh;
+  margin-top: 20vh;
+  border-left: 2px solid steelblue;
+}
+
+.my_fs_7 {
+  font-size: small;
+  font-weight: 200;
+}

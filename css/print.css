@@ -1,0 +1,146 @@
+/* print */
+.my_background_print {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(224, 255, 245, 0.7)
+    ),
+    url(../img/preview.jpg) center / cover no-repeat fixed;
+  min-height: 90.4%;
+}
+
+.my_print_container_in {
+  width: 10.1cm;
+  height: 17.5cm;
+  margin: auto;
+  border: brown 3px double;
+}
+.my_print_container_ex {
+  width: 10.1cm;
+  height: 7.3cm;
+  margin: auto;
+  border: brown 3px double;
+}
+
+.my_title {
+  font-family: "Scheherazade", serif;
+  font-size: 22px;
+  font-weight: 900;
+}
+.my_radious {
+  border-radius: 15px;
+}
+.my_mr_in {
+  margin-right: 60%;
+}
+.my_mr_ex {
+  margin-right: 37%;
+}
+
+.my_border {
+  border: 3px slategray double;
+}
+.my_fs {
+  font-size: 16px;
+}
+.my_lib {
+  font-size: 18px;
+}
+.logo_bg_in {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../img/logo_bg.png) no-repeat center;
+  width: 8cm auto;
+  height: 10cm auto;
+}
+.logo_bg_ex {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../img/logo_bg.png) no-repeat center;
+  width: 8cm auto;
+  height: 4.5cm auto;
+}
+.my_position_fixed {
+  position: fixed;
+  top: 20%;
+  left: 1%;
+  cursor: pointer;
+}
+.my_position_fixed .dropdown-item {
+  padding: 10px 10px;
+}
+
+.my_mt_mb {
+  margin-top: -0.5%;
+  margin-bottom: -3.5%;
+}
+@media print {
+  .my_margin_top{
+    margin: -50px;
+  }
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .my_hidden {
+    display: none;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
+  .col-sm-11 {
+    width: 92%;
+    float: left;
+  }
+  .col-sm-10 {
+    width: 83%;
+    float: left;
+  }
+  .col-sm-9 {
+    width: 75%;
+    float: left;
+  }
+  .col-sm-8 {
+    width: 66%;
+    float: left;
+  }
+  .col-sm-7 {
+    width: 58%;
+    float: left;
+  }
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-sm-5 {
+    width: 42%;
+    float: left;
+  }
+  .col-sm-4 {
+    width: 33%;
+    float: left;
+  }
+  .col-sm-3 {
+    width: 25%;
+    float: left;
+  }
+  .col-sm-2 {
+    width: 16%;
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8%;
+    float: left;
+  }
+  .justify-content-md-center {
+    justify-content: center !important;
+  }
+  .my_background_print {
+    background-size: 0 0;
+  }
+}
