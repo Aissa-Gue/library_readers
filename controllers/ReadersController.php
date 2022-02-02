@@ -14,7 +14,7 @@ if (isset($_POST['search']) or isset($_POST['prev_page']) or isset($_POST['next_
 }
 // Search query
 $searchQry= "SELECT * FROM a_readers 
-WHERE stud_id LIKE '%$soft_id' 
+WHERE soft_id LIKE '%$soft_id' 
 AND sex LIKE '%$sex'
 AND (
     CONCAT(lname, ' ', fname) LIKE '%$fullname%' 
