@@ -1,5 +1,5 @@
 <?php 
-$currentUrl = "$_SERVER[REQUEST_URI]";
+ $currentUrl = basename($_SERVER['REQUEST_URI']);
 ?>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -9,42 +9,38 @@ $currentUrl = "$_SERVER[REQUEST_URI]";
             d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
         </path>
     </symbol>
+    <symbol id="home" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+        <path fill-rule="evenodd"
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+    </symbol>
     <symbol id="add" viewBox="0 0 16 16">
-        <path
-            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
         <path fill-rule="evenodd"
             d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
     </symbol>
     <symbol id="students" viewBox="0 0 16 16">
-        <path
-            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-    </symbol>
-    <symbol id="stats" viewBox="0 0 16 16">
-        <path
-            d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z" />
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+        <path fill-rule="evenodd"
+            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
     </symbol>
     <symbol id="history" viewBox="0 0 16 16">
         <path
-            d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
-        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
-        <path
-            d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
     </symbol>
-    <symbol id="home" viewBox="0 0 16 16">
+    <symbol id="stats" viewBox="0 0 16 16">
         <path
-            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+            d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
     </symbol>
     <symbol id="settings" viewBox="0 0 16 16">
         <path
-            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-        <path
-            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
     </symbol>
     <symbol id="logout" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
-        <path fill-rule="evenodd"
-            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+        <path
+            d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
     </symbol>
 
     <symbol id="table" viewBox="0 0 16 16">
@@ -109,7 +105,7 @@ $currentUrl = "$_SERVER[REQUEST_URI]";
     </symbol>
 </svg>
 
-<div id="sidebar" class="d-flex flex-column flex-shrink-0 bg-light rounded py-2">
+<div id="sidebar" class="d-flex flex-column flex-shrink-0 bg-light shadow-lg rounded py-2">
     <a href=" /" class="d-block p-3 link-dark text-decoration-none" title="قائمة البرامج" data-bs-toggle="tooltip"
         data-bs-placement="right">
         <!-- <svg class="bi" width="40" height="32">
@@ -118,29 +114,34 @@ $currentUrl = "$_SERVER[REQUEST_URI]";
         <img src="../img/logo.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+
+        <?php if($_SESSION['id'] != 2){?>
         <li class="nav-item">
             <a href="home.php"
-                class="nav-link py-3 border-bottom <?php if($currentUrl == '/library_readers/views/home.php') echo 'active'?>"
+                class="nav-link py-3 rounded border-bottom <?php if($currentUrl == 'home.php') echo 'active'?>"
                 aria-current="page" title="تسجيل الحضور" data-bs-toggle="tooltip" data-bs-placement="right">
                 <svg class="bi" width="24" height="24" role="img" aria-label="Home">
                     <use xlink:href="#home" />
                 </svg>
             </a>
         </li>
+        <?php } ?>
 
+        <?php if($_SESSION['id'] != 3){?>
         <li>
             <a href="readersAdd.php"
-                class="nav-link py-3 border-bottom <?php if($currentUrl == '/library_readers/views/readersAdd.php') echo 'active' ?>"
+                class="nav-link py-3 rounded border-bottom <?php if($currentUrl == 'readersAdd.php') echo 'active' ?>"
                 title="إضافة منخرط" data-bs-toggle="tooltip" data-bs-placement="right">
                 <svg class="bi" width="24" height="24" role="img">
                     <use xlink:href="#add" />
                 </svg>
             </a>
         </li>
+        <?php } ?>
 
         <li>
             <a href="readers.php"
-                class="nav-link py-3 border-bottom <?php if($currentUrl == '/library_readers/views/readers.php') echo 'active'?>"
+                class="nav-link py-3 rounded border-bottom <?php if($currentUrl == 'readers.php') echo 'active'?>"
                 title="قائمة المنخرطين" data-bs-toggle="tooltip" data-bs-placement="right">
                 <svg class="bi" width="24" height="24" role="img">
                     <use xlink:href="#students" />
@@ -150,7 +151,7 @@ $currentUrl = "$_SERVER[REQUEST_URI]";
 
         <li class="nav-item">
             <a href="readersReport.php"
-                class="nav-link py-3 border-bottom <?php if($currentUrl == '/library_readers/views/readersReport.php') echo 'active'?>"
+                class="nav-link py-3 rounded border-bottom <?php if($currentUrl == 'readersReport.php') echo 'active'?>"
                 aria-current="page" title="تقرير الحضور" data-bs-toggle="tooltip" data-bs-placement="right">
                 <svg class="bi" width="24" height="24" role="img">
                     <use xlink:href="#history" />
@@ -160,7 +161,7 @@ $currentUrl = "$_SERVER[REQUEST_URI]";
 
         <li class="nav-item">
             <a href="statistics.php"
-                class="nav-link py-3 border-bottom <?php if($currentUrl == '/library_readers/views/statistics.php') echo 'active'?>"
+                class="nav-link py-3 rounded border-bottom <?php if($currentUrl == 'statistics.php') echo 'active'?>"
                 aria-current="page" title="إحصائيات" data-bs-toggle="tooltip" data-bs-placement="right">
                 <svg class="bi" width="24" height="24" role="img">
                     <use xlink:href="#stats" />
@@ -168,20 +169,23 @@ $currentUrl = "$_SERVER[REQUEST_URI]";
             </a>
         </li>
 
+        <?php if($_SESSION['id'] == 1){?>
         <li>
             <a href="settings.php"
-                class="nav-link py-3 border-bottom <?php if($currentUrl == '/library_readers/views/settings.php') echo 'active'?>"
+                class="nav-link py-3 rounded border-bottom <?php if($currentUrl == 'settings.php') echo 'active'?>"
                 title="إعدادات" data-bs-toggle="tooltip" data-bs-placement="right">
-                <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard">
+                <svg class="bi bi-gear-fill" fill="currentColor" width="24" height="24" role="img"
+                    aria-label="Dashboard">
                     <use xlink:href="#settings" />
                 </svg>
             </a>
         </li>
+        <?php } ?>
 
         <li>
-            <a href="<?php echo $ROOT_DIR?>/controllers/logout.php"
-                class="nav-link py-3 <?php if($currentUrl == '/library_readers/controllers/logout.php') echo 'active'?>"
-                title="تسجيل الخروج" data-bs-toggle="tooltip" data-bs-placement="right">
+            <a href="../controllers/logout.php"
+                class="nav-link py-3 <?php if($currentUrl == 'logout.php') echo 'active'?>" title="تسجيل الخروج"
+                data-bs-toggle="tooltip" data-bs-placement="right">
                 <svg class="bi" width="24" height="24" role="img" aria-label="Orders">
                     <use xlink:href="#logout" />
                 </svg>

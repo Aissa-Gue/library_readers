@@ -3,16 +3,19 @@
 // input values
 $soft_id = '';
 $fullname = '';
+$sex = '';
 $order = '';
 
 if (isset($_POST['search']) or isset($_POST['prev_page']) or isset($_POST['next_page'])) {
     $soft_id = $_POST['soft_id'];
     $fullname = $_POST['fullname'];
+    $sex = $_POST['sex'];
     $order =  $_POST['order_by'];
 }
 // Search query
 $searchQry= "SELECT * FROM a_readers 
 WHERE stud_id LIKE '%$soft_id' 
+AND sex LIKE '%$sex'
 AND (
     CONCAT(lname, ' ', fname) LIKE '%$fullname%' 
     OR 

@@ -62,7 +62,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -83,7 +83,9 @@ input[type=number] {
   cursor: pointer;
 }
 
-table, th, td {
+table,
+th,
+td {
   direction: rtl;
   border: var(--border);
   text-align: center;
@@ -158,7 +160,7 @@ h1:hover {
   height: 30px;
   opacity: 1;
 }
-#submit:hover{
+#submit:hover {
   background: #faa05a;
   color: #edfbf6;
 }

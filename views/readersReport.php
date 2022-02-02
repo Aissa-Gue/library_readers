@@ -53,7 +53,7 @@ $subtitle = "تقرير الحضور";
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col" class="text-center">رقم التسجيل</th>
+                                <th scope="col" class="text-center">رقم المنخرط</th>
                                 <th scope="col" class="">الاسم الكامل</th>
                                 <th scope="col" class="text-center">تاريخ الميلاد</th>
                                 <th scope="col" class="text-center">تاريخ الحضور</th>
@@ -68,7 +68,7 @@ $subtitle = "تقرير الحضور";
                     while ($row = mysqli_fetch_array($searchResult)) {
                     ?>
                             <tr>
-                                <th scope="row" class="text-center"><?php echo $row['stud_id'] ?></th>
+                                <th scope="row" class="text-center"><?php echo $row['soft_id'] ?></th>
                                 <?php if ($row['sex'] == 0) { ?>
                                 <td class="">
                                     <?php echo

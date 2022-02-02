@@ -4,6 +4,7 @@ $topReadersQry = "SELECT lname, fname, father, sex, count(*) as visits,
        SEC_TO_TIME(SUM(TIME_TO_SEC(timediff(exit_time,enter_time)))) AS total_time
 FROM a_readers, b_report
 WHERE a_readers.soft_id = b_report.soft_id
+AND b_report.exit_time IS NOT NULL
 AND year(c_date) = year(CURRENT_DATE)
 GROUP BY b_report.soft_id
 ORDER BY visits DESC
@@ -68,5 +69,14 @@ WHERE a_readers.soft_id = b_report.soft_id
 AND YEAR(c_date) = YEAR(CURRENT_DATE)
 GROUP BY MONTH(c_date)
 ORDER BY MONTH(c_date)";
+
+$readingHistoryQry = "SELECT MONTHNAME(c_date) as 'month', count(*) as 'visits',
+SEC_TO_TIME(SUM(TIME_TO_SEC(timediff(exit_time,enter_time)))) AS total_time
+FROM a_readers, b_report
+WHERE a_readers.soft_id = b_report.soft_id
+/*AND c_date > DATE_SUB(now(), INTERVAL 12 MONTH)*/
+AND c_date < Now() and c_date > DATE_ADD(Now(), INTERVAL- 12 MONTH)
+GROUP BY YEAR(c_date),MONTH(c_date)
+ORDER BY c_date";
 $readingHistoryResult = mysqli_query($conn, $readingHistoryQry);
 $rows = mysqli_fetch_all($readingHistoryResult, MYSQLI_ASSOC);

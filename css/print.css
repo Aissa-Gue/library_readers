@@ -1,12 +1,4 @@
 /* print */
-.my_background_print {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(224, 255, 245, 0.7)
-    ),
-    url(../img/preview.jpg) center / cover no-repeat fixed;
-  min-height: 90.4%;
-}
 
 .my_print_container_in {
   width: 10.1cm;
@@ -78,7 +70,7 @@
   margin-bottom: -3.5%;
 }
 @media print {
-  .my_margin_top{
+  .my_margin_top {
     margin: -50px;
   }
   .col-sm-auto {
@@ -140,7 +132,7 @@
   .justify-content-md-center {
     justify-content: center !important;
   }
-  .my_background_print {
+  .background_img {
     background-size: 0 0;
   }
 }

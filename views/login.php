@@ -27,18 +27,45 @@ a {
 .form-right i {
     font-size: 100px;
 }
+
+.my_img {
+    width: 100%;
+    height: 100%;
+}
+
+.cover_image {
+    background-image: url("../img/bg_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* Add the blur effect */
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 </style>
 
 <body class="pt-0">
-    <div class="login-page bg-light">
+    <div class="cover_image"></div>
+    <div class="login-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="bg-white shadow rounded">
                         <div class="row">
                             <div class="col-md-5 ps-0 d-none d-md-block">
-                                <div class="form-right h-100 bg-primary text-white text-center pt-5">
-                                    <h2 class="fs-1">Welcome Back!!!</h2>
+                                <div class="form-right h-100 bg-primary text-white text-center">
+                                    <!-- <h2 class="fs-1">Welcome Back!!!</h2> -->
+                                    <img src="../img/cover4.gif" class="my_img" />
                                 </div>
                             </div>
                             <div class="col-md-7 pe-0">

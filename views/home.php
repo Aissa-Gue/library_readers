@@ -1,5 +1,8 @@
 <?php
 include "../check.php";
+if($_SESSION['id'] == 2){
+    header("location: readersAdd.php");
+}
 include "../controllers/ReportController.php";
 $subtitle = "تسجيل الحضور";
 
@@ -29,7 +32,7 @@ $subtitle = "تسجيل الحضور";
                     <div class="row">
                         <div class="col-auto px-1">
                             <input class="form-control text-center" type="number" name="student_nbr"
-                                placeholder="رقم التسجيل" required>
+                                placeholder="رقم المنخرط" required>
                         </div>
                         <div class="col-auto px-0">
                             <button class="btn btn-success px-4" name="enter">دخول</button>
