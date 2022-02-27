@@ -1,4 +1,10 @@
 /* print */
+html, body {
+    height:100%; 
+    margin-bottom: 0 !important; 
+    padding-bottom: 0 !important;
+    overflow: hidden;
+}
 
 .my_print_container_in {
   width: 10.1cm;

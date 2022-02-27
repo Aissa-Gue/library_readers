@@ -23,7 +23,7 @@ $subtitle = "طباعة بطاقة الانخراط";
                 <?php include "../views/components/sidebar.php" ?>
             </div>
 
-            <div class="col-11 offset-1 ">
+            <div class="col-11">
                 <?php if ($sex == 0) { ?>
                 <div class="my_print_container_in logo_bg_in mb-2">
                     <div class="row">
