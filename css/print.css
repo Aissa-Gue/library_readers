@@ -1,10 +1,4 @@
 /* print */
-html, body {
-    height:100%; 
-    margin-bottom: 0 !important; 
-    padding-bottom: 0 !important;
-    overflow: hidden;
-}
 
 .my_print_container_in {
   width: 10.1cm;
@@ -76,6 +70,13 @@ html, body {
   margin-bottom: -3.5%;
 }
 @media print {
+	html, body {
+    height:100%; 
+    margin-bottom: 0 !important; 
+    padding-bottom: 0 !important;
+    overflow: hidden;
+	}
+
   .my_margin_top {
     margin: -50px;
   }
